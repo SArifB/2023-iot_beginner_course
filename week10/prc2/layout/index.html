@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #flex-container {
+        display: flex;
+        flex-direction: row;
+        font-size: 24px;
+        text-align: center;
+      }
+      #flex-item-left {
+        background-color: blueviolet;
+        padding: 15px;
+        flex: 50%;
+      }
+      #flex-item-right {
+        background-color: orange;
+        padding: 15px;
+        flex: 50%;
+      }
+      @media screen and (max-width: 700px) {
+        #flex-container {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>responsive layout</h1>
+    <article id="flex-container">
+      <section id="flex-item-left">
+        <p>left item</p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias rerum
+          mollitia amet nobis quos! Sequi consequatur nam nisi, voluptatem
+          voluptatibus quidem minus, sed repellat ad provident fugiat dolore ab
+          dolor.
+        </p>
+      </section>
+      <section id="flex-item-right">
+        <p>right item</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime nisi
+          corporis tempore minima, debitis porro distinctio! Beatae porro
+          tempora autem, sint, qui dolorem soluta maiores ad labore
+          necessitatibus eligendi corporis!
+        </p>
+      </section>
+    </article>
+  </body>
+</html>

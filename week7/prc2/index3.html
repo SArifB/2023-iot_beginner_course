@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div id="container"></div>
+    <form id="form">
+      <input type="text" />
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      const form = document.getElementById("form");
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        console.log(event);
+      });
+
+      const myArray = ["HTML", "CSS", "Javascript", "Vue", "Angular", "React"];
+      let tech = "<ul>";
+      for (let i = 0; i < myArray.length; i++) {
+        const n = myArray[i];
+        tech = tech + "<li>" + n + "</li>";
+      }
+      tech = tech + "</ul>";
+      document.querySelector("#container").innerHTML = tech;
+
+      const listItems = document.getElementsByTagName("li");
+      console.log(listItems);
+      for (let i = 0; i < listItems.length; i++) {
+        listItems[i].innerHTML = "C++ rules";
+      }
+
+      const containerElement = document.querySelector("#container");
+      containerElement.addEventListener("mouseover", () => {
+        containerElement.style.color = "green";
+      });
+      containerElement.addEventListener("mouseout", () => {
+        containerElement.style.color = "black";
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        console.log("Dom content loaded");
+      });
+
+      window.addEventListener("load", () => {
+        console.log("Window loaded");
+      });
+    </script>
+  </body>
+</html>

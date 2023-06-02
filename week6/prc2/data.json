@@ -1,0 +1,26 @@
+{
+    "name": "John Wick",
+    "age": 21,
+    "city": "New York",
+    "bool": true,
+    "middlename": null,
+    "empty": "",
+    "address": {
+        "street": "7 Ave",
+        "city": "London"
+    },
+    "phonenumbers": [
+        "044 343 4534",
+        "243 242 9766"
+    ],
+    "cars": [{
+        "make": "dsidisj",
+        "isfsji": "kifnsd"
+    },
+    {
+        "eskjncskjdn": "iurdh",
+        "idsfk": "kidfhsd"
+    }],
+    "dsiuhjds": "oiudsn"
+
+}

@@ -1,0 +1,17 @@
+.navbar {
+	background-color: #6ab446;
+}
+
+.nav-link,
+.navbar-brand {
+	color: #fff;
+}
+
+.navbar-collapse {
+	justify-content: flex-end;
+}
+
+.footer{
+	background-color: #222;
+	color: white;
+}

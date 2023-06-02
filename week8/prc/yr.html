@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const fetchWeather = async () => {
+        try {
+          const response = await fetch(
+            "https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=61.4978&lon=23.7610"
+          );
+          const data = await response.json();
+          console.log(data);
+          const details = data.properties.timeseries[0].data.instant.details;
+          console.log("Air temp: " + details.air_temperature);
+        } catch (error) {
+          console.error(error);
+        }
+      };
+      fetchWeather();
+    </script>
+  </body>
+</html>
+
+<!-- air_temperature -->
